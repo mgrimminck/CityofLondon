@@ -2,16 +2,17 @@
   display: grid;
   grid-template-columns: 100px 100px 100px;
   grid-gap: 10px;
-  background-color: #fff;
+  background-color: #043;
   color: #444;
+  border-top: 2px solid #ea0; 
 }
 
 .box {
-  background-color: #444;
+  background-color: #043;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
-  font-size: 150%;
+  font-size: 80%;
 }
 .a {
         grid-column-start: 1; grid-column-end: 5;
@@ -19,7 +20,11 @@
 .b {
         grid-column-start: 5; grid-column-end: 6;
         grid-row-start: 1; grid-row-end: 5;}
-#menu, #menu ul {
+
+nav {
+	background-color: #043;
+}
+		#menu, #menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -27,10 +32,9 @@
 
 #menu {
     width: 960px;
-    margin: 60px auto;
-    border: 1px solid #222;
-    background-color: #111;
-    background-image: linear-gradient(#444, #111);
+    margin: 40px auto;
+    border: 2px solid #ea0;
+    background-color: #043;
     border-radius: 6px;
     box-shadow: 0 1px 1px #777;
 }
@@ -61,8 +65,7 @@
 #menu a {
     float: left;
     padding: 12px 30px;
-    color: blue;
-    text-transform: uppercase;
+    color: white;
     font: bold 12px Source Sans Pro, Helvetica;
     text-decoration: none;
     text-shadow: 0 1px 0 #000;
@@ -126,12 +129,13 @@
     white-space: nowrap;
     float: none;
     text-transform: none;
-    color: red;
+    color: white;
+	background-color: #043;
 }
 
 #menu ul a:hover {
-    background-color: #0186ba;
-    background-image: linear-gradient(#04acec, #0186ba);
+    background-color: #ea0;
+    background-image: linear-gradient(#043);
 }
 
 /* Handle the First and Last Child */
@@ -171,6 +175,12 @@
 #menu ul li:last-child > a {
     border-radius: 0 0 3px 3px;
 }
+section {
+	text-align: center;
+}
+.getinvolved {
+	float: right
+}
     .contactsite {
         display: grid;
 		grid-gap: 10px;
@@ -180,16 +190,18 @@
         color: #444;
     }
 	.box {
-        background-color: #444;
-        color: #fff;
+        background-color: white;
+        color: black;
+		border: 2px solid;
         border-radius: 5px;
         padding: 20px;
-        font-size: 150%;
+        font: bold 14px Source Sans Pro, Helvetica;
     }
 
   .box .box {
-        background-color: #ccc;
-        color: #444;}
+        background-color: #ea0;
+        color: black;
+	}
 
     .a {
         grid-column: col / span 2;
@@ -222,29 +234,48 @@
         grid-row: 2;}
 
 .filledBox {
-	background-color: LightBlue;
-	width: 170px;
-	height: 100px;
+	background-color: #043;
+	color: #ea0;
+	width: 180px;
+	height: 80px;
 	margin-top: 5px;
+	text-align: center;
+	font: bold 30px Source Sans Pro, Helvetica;
 
 }
 .recycle {
-	width: 100px;
-	height: 100px;
+	width: 180px;
+	height: 60px;
 	padding: 10px;
-	background-color: DarkSeaGreen;
+	background-color: #043;
+	color: white;
+	font: bold 18px Source Sans Pro, Helvetica;
+	text-align: center;
 	}
 .recycle-header {
-	background-color: CornflowerBlue;
-	margin: -0.61em -0.61em 0.5em -0.61em;
+	background-color: #ea0;
+	margin: -0.61em -0.61em 0.5em -0.61em; 
 	}
 .main:hover {
 	transform: scale(2);
 		}
 .main {
-		  background: #46BAAF;
 		  transition: all 1s;
+		  text-align: center;
+		  font: bold 30px Source Sans Pro, Helvetica;
 		}
+h1 {
+	color: #043;
+    font: bold 30px Source Sans Pro, Helvetica;
+}
+h2 {
+	color: #043;
+    font: bold 24px Source Sans Pro, Helvetica;
+}
+p {
+	color: black;
+    font: bold 16px Source Sans Pro, Helvetica;
+}
 footer {
 	display: block;
 	width: 100%;
@@ -252,7 +283,7 @@ footer {
 	padding: 1.2rem .5rem;
 	border-top: 2px solid #ea0;
 	background-color: #043;
-	color: #fff;
+	color: white;
     text-align: center;
-
-}
+	font: bold 14px Source Sans Pro, Helvetica;
+	}
