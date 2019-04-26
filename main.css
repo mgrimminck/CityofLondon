@@ -1,5 +1,5 @@
 .wrapper {
-  display: grid;
+  display: grid; /* used grid */
   grid-template-columns: 100px 100px 100px;
   grid-gap: 10px;
   background-color: #043;
@@ -30,7 +30,7 @@ nav {
     list-style: none;
 }
 
-#menu {
+#menu { /* used MENU 8*/
     width: 960px;
     margin: 40px auto;
     border: 2px solid #ea0;
@@ -52,8 +52,6 @@ nav {
 #menu {
     zoom:1;
 }
-
-/* list elements */
 
 #menu li {
     float: left;
@@ -95,17 +93,16 @@ nav {
     transition: all .2s ease-in-out;
 }
 
-#menu li:hover > ul {
+#menu li:hover > ul { /*used CHILD */
     opacity: 1;
     visibility: visible;
     margin: 0;
 }
 
-#menu ul ul {
+#menu ul ul { /*used DESCENDENT*/
     top: 0;
     left: 150px;
     margin: 0 0 0 20px;
-    _margin: 0; /*IE6 only*/
     box-shadow: -1px 0 0 rgba(255,255,255,.3);      
 }
 
@@ -113,7 +110,6 @@ nav {
     float: none;
     display: block;
     border: 0;
-    _line-height: 0; /*IE6 only*/
     box-shadow: 0 1px 0 #111, 0 2px 0 #666;
 }
 
@@ -181,7 +177,7 @@ section {
 .getinvolved {
 	float: right
 }
-    .contactsite {
+    .contactsite { /* used NESTED GRID */
         display: grid;
 		grid-gap: 10px;
         grid-template-columns: repeat(4, [col] 150px ) ;
@@ -233,12 +229,12 @@ section {
         grid-column: 2;
         grid-row: 2;}
 
-.filledBox {
+.filledBox { /*Used BOX MODEL*/
 	background-color: #043;
 	color: #ea0;
 	width: 180px;
 	height: 80px;
-	margin-top: 5px;
+	margin-top: 5px; /*Used BOX MODEL MARGIN*/
 	text-align: center;
 	font: bold 30px Source Sans Pro, Helvetica;
 
@@ -254,23 +250,26 @@ section {
 	}
 .recycle-header {
 	background-color: #ea0;
-	margin: -0.61em -0.61em 0.5em -0.61em; 
+	margin: -0.61em -0.61em 0.5em -0.61em; /*Used NEGATIVE MARGINS*/
 	}
 .main:hover {
-	transform: scale(2);
+	transform: scale(2); /*Used TRANSFORM */
 		}
 .main {
-		  transition: all 1s;
+		  transition: all 1s; /*Used TRANSITION */
 		  text-align: center;
 		  font: bold 30px Source Sans Pro, Helvetica;
+		  
 		}
 h1 {
 	color: #043;
     font: bold 30px Source Sans Pro, Helvetica;
+	text-decoration: none;
 }
 h2 {
 	color: #043;
     font: bold 24px Source Sans Pro, Helvetica;
+	text-decoration: none;
 }
 p {
 	color: black;
@@ -283,7 +282,15 @@ footer {
 	padding: 1.2rem .5rem;
 	border-top: 2px solid #ea0;
 	background-color: #043;
-	color: white;
-    text-align: center;
-	font: bold 14px Source Sans Pro, Helvetica;
+	text-align: center;
+	
+	
 	}
+ul.footer {
+	list-style-type: none;
+	font: bold 14px Source Sans Pro, Helvetica;
+	color: white;
+}
+a.footer {
+	color: white
+}
