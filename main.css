@@ -245,3 +245,14 @@
 		  background: #46BAAF;
 		  transition: all 1s;
 		}
+footer {
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding: 1.2rem .5rem;
+	border-top: 2px solid #ea0;
+	background-color: #043;
+	color: #fff;
+    text-align: center;
+
+}
